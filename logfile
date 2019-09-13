@@ -1,0 +1,124 @@
+2019-09-06 17:54:21.481 +08 [29840] FATAL:  lock file "postmaster.pid" already exists
+2019-09-06 17:54:21.481 +08 [29840] HINT:  Is another postmaster (PID 15668) running in data directory "C:/Users/chun_yew_yeap/scoop/apps/postgresql/current/data"?
+2019-09-06 17:57:33.933 +08 [15940] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-06 17:57:33.933 +08 [15940] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-06 17:57:34.207 +08 [22376] LOG:  database system was shut down at 2019-09-06 17:54:34 +08
+2019-09-06 17:57:34.346 +08 [15940] LOG:  database system is ready to accept connections
+2019-09-08 15:10:07.801 +08 [15940] LOG:  server process (PID 4204) was terminated by exception 0xC000013A
+2019-09-08 15:10:07.801 +08 [15940] DETAIL:  Failed process was running: SELECT d.datname as "Name",
+	       pg_catalog.pg_get_userbyid(d.datdba) as "Owner",
+	       pg_catalog.pg_encoding_to_char(d.encoding) as "Encoding",
+	       d.datcollate as "Collate",
+	       d.datctype as "Ctype",
+	       pg_catalog.array_to_string(d.datacl, E'\n') AS "Access privileges"
+	FROM pg_catalog.pg_database d
+	ORDER BY 1;
+2019-09-08 15:10:07.801 +08 [15940] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2019-09-08 15:10:07.802 +08 [15940] LOG:  terminating any other active server processes
+2019-09-08 15:10:07.906 +08 [15940] LOG:  statistics collector process (PID 28980) was terminated by exception 0xC000013A
+2019-09-08 15:10:07.906 +08 [15940] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2019-09-08 15:10:07.917 +08 [15940] LOG:  all server processes terminated; reinitializing
+2019-09-08 15:10:08.439 +08 [20508] LOG:  database system was interrupted; last known up at 2019-09-06 18:03:08 +08
+2019-09-08 15:10:30.730 +08 [20508] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-09-08 15:10:30.744 +08 [20508] LOG:  redo starts at 0/1781438
+2019-09-08 15:10:30.744 +08 [20508] LOG:  invalid record length at 0/1781518: wanted 24, got 0
+2019-09-08 15:10:30.744 +08 [20508] LOG:  redo done at 0/17814E0
+2019-09-08 15:10:31.004 +08 [15940] LOG:  database system is ready to accept connections
+2019-09-08 15:19:23.606 +08 [15940] LOG:  received fast shutdown request
+2019-09-08 15:19:23.611 +08 [15940] LOG:  aborting any active transactions
+2019-09-08 15:19:23.638 +08 [15940] LOG:  worker process: logical replication launcher (PID 30700) exited with exit code 1
+2019-09-08 15:19:23.645 +08 [24368] LOG:  shutting down
+2019-09-08 15:19:23.728 +08 [15940] LOG:  database system is shut down
+2019-09-08 15:19:26.933 +08 [31984] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-08 15:19:26.934 +08 [31984] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-08 15:19:27.265 +08 [6244] LOG:  database system was shut down at 2019-09-08 15:19:23 +08
+2019-09-08 15:19:27.390 +08 [31984] LOG:  database system is ready to accept connections
+2019-09-08 16:14:44.003 +08 [33444] ERROR:  invalid input syntax for integer: " 0.43"
+2019-09-08 16:14:44.003 +08 [33444] CONTEXT:  COPY home, line 1, column Age: " 0.43"
+2019-09-08 16:14:44.003 +08 [33444] STATEMENT:  COPY home FROM stdin WITH DELIMITER AS ',' NULL AS '\N'
+2019-09-08 16:20:04.157 +08 [26676] FATAL:  database "home" does not exist
+2019-09-09 00:08:47.410 +08 [12352] ERROR:  invalid input syntax for integer: " 0.43"
+2019-09-09 00:08:47.410 +08 [12352] CONTEXT:  COPY home, line 1, column Age: " 0.43"
+2019-09-09 00:08:47.410 +08 [12352] STATEMENT:  COPY home FROM stdin WITH DELIMITER AS ',' NULL AS '\N'
+2019-09-09 00:37:54.819 +08 [28504] ERROR:  syntax error at or near "clear" at character 1
+2019-09-09 00:37:54.819 +08 [28504] STATEMENT:  clear
+	select * from home;
+2019-09-09 08:51:14.546 +08 [31984] LOG:  received fast shutdown request
+2019-09-09 08:51:14.552 +08 [31984] LOG:  aborting any active transactions
+2019-09-09 08:51:14.599 +08 [31984] LOG:  worker process: logical replication launcher (PID 2040) exited with exit code 1
+2019-09-09 08:51:14.604 +08 [29608] LOG:  shutting down
+2019-09-09 08:51:14.780 +08 [31984] LOG:  database system is shut down
+2019-09-09 08:55:10.170 +08 [33660] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-09 08:55:10.171 +08 [33660] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-09 08:55:10.470 +08 [16012] LOG:  database system was shut down at 2019-09-09 08:51:44 +08
+2019-09-09 08:55:10.655 +08 [33660] LOG:  database system is ready to accept connections
+2019-09-09 23:41:57.873 +08 [37640] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-09 23:41:57.873 +08 [37640] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes) VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-09 23:44:59.463 +08 [38348] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-09 23:44:59.463 +08 [38348] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes) VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-09 23:51:09.555 +08 [16704] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-09 23:51:09.555 +08 [16704] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes) VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-09 23:56:45.147 +08 [38872] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-09 23:56:45.147 +08 [38872] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-09 23:57:17.891 +08 [21804] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-09 23:57:17.891 +08 [21804] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 00:00:47.680 +08 [35488] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-10 00:00:47.680 +08 [35488] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 00:10:32.077 +08 [21148] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-10 00:10:32.077 +08 [21148] STATEMENT:  INSERT INTO home (Sell,List,Living,Rooms,Beds,Baths,Age,Acres,Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 00:12:09.256 +08 [27544] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-10 00:12:09.256 +08 [27544] STATEMENT:  INSERT INTO home (Sell, List, Living, Rooms, Beds, Baths, Age, Acres, Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 23:05:57.373 +08 [26880] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-10 23:05:57.373 +08 [26880] STATEMENT:  INSERT INTO home (Sell, List, Living, Rooms, Beds, Baths, Age, Acres, Taxes) VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 23:13:06.776 +08 [33632] ERROR:  invalid input syntax for integer: " 0.43" at character 82
+2019-09-10 23:13:06.776 +08 [33632] STATEMENT:  INSERT INTO home               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 23:24:45.788 +08 [23568] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-10 23:24:45.788 +08 [23568] STATEMENT:  INSERT INTO home (sell, List, Living, Rooms, Beds, Baths, Age, Acres, Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 23:24:51.780 +08 [36608] ERROR:  column "sell" of relation "home" does not exist at character 19
+2019-09-10 23:24:51.780 +08 [36608] STATEMENT:  INSERT INTO home (sell, List, Living, Rooms, Beds, Baths, Age, Acres, Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033')
+2019-09-10 23:29:32.567 +08 [37664] ERROR:  column "rooms" of relation "home" does not exist at character 45
+2019-09-10 23:29:32.567 +08 [37664] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", Rooms, Beds, Baths, Age, Acres, Taxes)               VALUES ('175',' 180',' 18','  8',' 4',' 1','  12',' 0.43','  4033');
+2019-09-10 23:29:51.798 +08 [19516] ERROR:  invalid input syntax for integer: " " at character 118
+2019-09-10 23:29:51.798 +08 [19516] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", "Rooms", "Beds", "Baths", "Age", "Acres", "Taxes")               VALUES (' ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2019-09-10 23:31:25.294 +08 [11200] ERROR:  invalid input syntax for integer: " " at character 118
+2019-09-10 23:31:25.294 +08 [11200] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", "Rooms", "Beds", "Baths", "Age", "Acres", "Taxes")               VALUES (' ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2019-09-10 23:56:47.441 +08 [33660] LOG:  server process (PID 17832) was terminated by exception 0xC000013A
+2019-09-10 23:56:47.441 +08 [33660] DETAIL:  Failed process was running: SELECT c.oid::pg_catalog.regclass, pg_catalog.pg_get_expr(c.relpartbound, c.oid) FROM pg_catalog.pg_class c, pg_catalog.pg_inherits i WHERE c.oid=i.inhrelid AND i.inhparent = '32868' ORDER BY c.oid::pg_catalog.regclass::pg_catalog.text;
+2019-09-10 23:56:47.441 +08 [33660] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2019-09-10 23:56:47.441 +08 [33660] LOG:  terminating any other active server processes
+2019-09-10 23:56:47.663 +08 [33660] LOG:  statistics collector process (PID 36300) was terminated by exception 0xC000013A
+2019-09-10 23:56:47.663 +08 [33660] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2019-09-10 23:56:47.689 +08 [33660] LOG:  all server processes terminated; reinitializing
+2019-09-10 23:56:48.612 +08 [5736] LOG:  database system was interrupted; last known up at 2019-09-10 23:33:41 +08
+2019-09-10 23:57:03.612 +08 [5736] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-09-10 23:57:03.627 +08 [5736] LOG:  redo starts at 0/17C8C88
+2019-09-10 23:57:03.627 +08 [5736] LOG:  invalid record length at 0/17C8D68: wanted 24, got 0
+2019-09-10 23:57:03.627 +08 [5736] LOG:  redo done at 0/17C8D30
+2019-09-10 23:57:03.811 +08 [33660] LOG:  database system is ready to accept connections
+2019-09-13 09:41:38.767 +08 [14884] LOG:  listening on IPv6 address "::1", port 5432
+2019-09-13 09:41:38.767 +08 [14884] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-09-13 09:41:39.485 +08 [18152] LOG:  database system was interrupted; last known up at 2019-09-10 23:57:03 +08
+2019-09-13 09:41:59.462 +08 [18152] LOG:  database system was not properly shut down; automatic recovery in progress
+2019-09-13 09:41:59.474 +08 [18152] LOG:  redo starts at 0/17C8DD8
+2019-09-13 09:41:59.474 +08 [18152] LOG:  invalid record length at 0/17C8E10: wanted 24, got 0
+2019-09-13 09:41:59.474 +08 [18152] LOG:  redo done at 0/17C8DD8
+2019-09-13 09:41:59.826 +08 [14884] LOG:  database system is ready to accept connections
+2019-09-13 09:45:41.366 +08 [400] ERROR:  invalid input syntax for integer: " " at character 118
+2019-09-13 09:45:41.366 +08 [400] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", "Rooms", "Beds", "Baths", "Age", "Acres", "Taxes")               VALUES (' ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2019-09-13 09:48:13.233 +08 [17736] ERROR:  invalid input syntax for integer: " " at character 118
+2019-09-13 09:48:13.233 +08 [17736] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", "Rooms", "Beds", "Baths", "Age", "Acres", "Taxes")               VALUES (' ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2019-09-13 09:49:10.794 +08 [3612] ERROR:  invalid input syntax for integer: " " at character 104
+2019-09-13 09:49:10.794 +08 [3612] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", "Rooms", "Beds", "Baths", "Age", "Acres", "Taxes") VALUES (' ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+2019-09-13 09:55:46.478 +08 [17512] ERROR:  syntax error at or near "ld" at character 1
+2019-09-13 09:55:46.478 +08 [17512] STATEMENT:  ld
+	CREATE TABLE home
+	CREATE TABLE home;
+2019-09-13 09:56:02.969 +08 [17512] ERROR:  syntax error at or near ";" at character 18
+2019-09-13 09:56:02.969 +08 [17512] STATEMENT:  CREATE TABLE home;
+2019-09-13 09:56:06.276 +08 [17512] ERROR:  syntax error at or near ";" at character 18
+2019-09-13 09:56:06.276 +08 [17512] STATEMENT:  CREATE TABLE home;
+2019-09-13 09:58:58.871 +08 [17512] ERROR:  syntax error at or near "select" at character 20
+2019-09-13 09:58:58.871 +08 [17512] STATEMENT:  select * from home
+	select * from home;
+2019-09-13 09:59:29.473 +08 [16660] ERROR:  invalid input syntax for integer: " " at character 104
+2019-09-13 09:59:29.473 +08 [16660] STATEMENT:  INSERT INTO home ("Sell", "List", "Living", "Rooms", "Beds", "Baths", "Age", "Acres", "Taxes") VALUES (' ',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
